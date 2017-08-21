@@ -1,9 +1,47 @@
-<!DOCTYPE html>
+
 <html>
 
 <head> 
+  <STYLE TYPE="text/css"> 
+  <!--@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);-->
+    <!--@import url(//fonts.googleapis.com/earlyaccess/cwtexhei.css);-->
+  </STYLE>
+	<style>
+		body{
+  background-color:#f2f2f2;
+  height:600px;
+}
+.HEA1{
+  font-family: 'cwTeXFangSong', serif;
+  text-align:center;
+}
+
+.PAR{   
+  font-family: 'cwTeXFangSong', serif;
+  margin:100px;
+}
+.WARN{
+  color :red;
+}
+
+
+.BUTT{
+  position: absolute;
+  display:inline-block;
+  border:solid 2px;
+  padding:0px 30px 0px 30px;
+  left:40%;
+
+}
+
+#OKBUT{
+   font-weight:normal;
+    font-family: 'cwTeXHei', serif;
+}
+	</style>
   	<script>
-		var list = [    "http://www.surveygizmo.com/s3/2856929/moraljudgement",
+      function jump(){
+        var list = [    "http://www.surveygizmo.com/s3/2856929/moraljudgement",
                         "http://www.surveygizmo.com/s3/2867505/Survey-2-EP",
                         "http://www.surveygizmo.com/s3/2867858/Survey-3-EP",
                         "http://www.surveygizmo.com/s3/2867920/Survey-4-EP",
@@ -16,11 +54,34 @@
                         "http://www.surveygizmo.com/s3/2868086/Survey-11-PP",
                         "http://www.surveygizmo.com/s3/2868161/Survey-12-PP" ]
 		window.location.assign(list[Math.floor((Math.random()*100)%12)])
+      }
 	</script>
 </head>
 
 <body>
+<div class="HEA1">
+<h1>跨文化道德判斷測驗</h1>
+</div>
+<div class="PAR">
+<p>
 
+徵求對象：<br>本研究徵求 18 到 65 歲健康參與者,所有參與者需視力正常或接近正常(配戴眼鏡或隱形眼鏡亦可) 、及無服用精神用藥。
+<br>
+<br>排除條件：(如您符合下列任何一項條件，請勿報名本次實驗)<br>
+本實驗之排除條件包含任何服藥中的精神科患者、正在服藥中或重症的神經內外科病人。
+受測內容/方式：問卷。
+<br>
+<br>注意事項：<br>
+非常感謝您參加本次調查，本研究旨在了解人類對於道德情境的思路及反應。研究採匿名方式自願進行，您必須至少年滿18歲才能填寫問卷。所有資料僅供心智科學研究用途，感謝您為心智科學研究撥冗填寫。您保有決定在一開始是否參與實驗，以及在參與過程中隨時退出的權利，但若您願意參與此研究，且希望您的參與是有效的，請務必填寫完平台內的所有問題，只填部分問題的受試者，數據將無法進入研究分析，謝謝您！
+<br>
+<br><div class="WARN">【※以下注意事項必看，有助於避免接下來閱讀時的困惑】</div><br>
+注意：情境中如果有指涉的母親、兒子、女兒、父親等親戚稱呼，請想像那就是你的親戚。但若情境中指涉女人或男人，那麼就是一位陌生人，請依此分別填寫你認為的親密關係
+
+(本研究由臺北醫學大學醫學人文研究所進行)
+</p>
+</div>
+<div class="BUTT" onclick="jump()"><h2 id="OKBUT">點這裡繼續</h2></div>
 </body>
+  
 
 </html>
